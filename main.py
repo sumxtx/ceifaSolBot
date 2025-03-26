@@ -27,8 +27,8 @@ def help_command(message):
 
 @bot.message_handler(commands=['generate'])
 def generate_command(message):
-    #response = requests.get(url="https://pumpportal.fun/api/create-wallet")
-    #data = response.json()
+    response = requests.get(url="https://pumpportal.fun/api/create-wallet")
+    dataj = response.json()
     msg_API = f"""*** API KEY ***  
 `{dataj['apiKey']}`
   
