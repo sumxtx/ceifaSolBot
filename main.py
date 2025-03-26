@@ -20,9 +20,11 @@ def help_command(message):
             \u26A0 The Bot DON'T store any of your keys \u26A0\n\
             Save them properly before start transactioning.
     
-    /request - Test getting the headers of a webpage
     """
+    # TODO: Need to find a way for the bot keep the API_KEY and the PRIVATE_KEY 
+    # without enter it all time, but without the bot saving it on himself
     #/balance <wallet_address> <token_address> - Get token balance
+    #/buy <amount_sol> <stop_loss> <take_profit> <token_address> - Buy the Token
     bot.reply_to(message, commands)
 
 @bot.message_handler(commands=['generate'])
